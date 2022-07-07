@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: mystery
+    password:
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+      platform: postgres
+
+
